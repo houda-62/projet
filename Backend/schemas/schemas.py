@@ -13,8 +13,8 @@ class OrganizerRead(BaseModel):
     name: str
     email: EmailStr
 
-    class Config:
-        orm_mode = True
+    # Pydantic v2: use model_config to enable reading from ORM objects
+    model_config = {"from_attributes": True}
 
 # Pour login
 class OrganizerLogin(BaseModel):

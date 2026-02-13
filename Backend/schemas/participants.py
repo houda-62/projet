@@ -11,5 +11,5 @@ class ParticipantRead(BaseModel):
     email: str
     event_id: int
 
-    class Config:
-        orm_mode = True
+    # Pydantic v2: enable reading attributes from ORM objects
+    model_config = {"from_attributes": True}

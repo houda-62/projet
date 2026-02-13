@@ -23,5 +23,5 @@ class EventRead(BaseModel):
     currency: str
     organizer_id: int 
     price: float | None = None 
-    class Config:
-        orm_mode = True
+    # Pydantic v2: enable reading attributes from ORM objects
+    model_config = {"from_attributes": True}
