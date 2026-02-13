@@ -7,4 +7,25 @@ venv/
 # Python cache
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
+# Flutter
+frontend/.dart_tool/
+frontend/.idea/
+frontend/.vscode/
+frontend/build/
+frontend/*.iml
+frontend/pubspec.lock
+frontend/android/
+frontend/ios/
+frontend/linux/flutter/ephemeral/
+
+# Alembic (garder les versions mais pas les caches)
+alembic/__pycache__/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
